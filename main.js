@@ -75,8 +75,6 @@ form.addEventListener('submit', function(event) {
     modal.style.display = 'none';
 });
 
-const defaultBook = new Book('The Hobbit', 'J.R.R Tolkien', 295, true);
-const defaultBook2 = new Book('1984', 'George Orwell', 252, true);
+const defaultBook = new Book('1984', 'George Orwell', 252, true);
 library.addBook(defaultBook);
-library.addBook(defaultBook2);
 library.printBooks();
