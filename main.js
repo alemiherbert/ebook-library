@@ -64,9 +64,9 @@ const library = new Library();
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const book = new Book(
-        document.getElementById('book-title').value,
-        document.getElementById('book-author').value,
-        document.getElementById('book-pages').value,
+        document.getElementById('book-title').value || "<Unknown>" ,
+        document.getElementById('book-author').value || "<Unknown>",
+        document.getElementById('book-pages').value || "0",
         true
     );
     library.addBook(book);
