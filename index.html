@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Alemi's Ebook Library</title>
+</head>
+
+<body>
+    <section id="enter-book">
+        <div class="modal-content">
+            <form action="" method="post" id="book-entry-form">
+                <h2>Add Book</h2>
+                <div>
+                    <label for="book-title">Title</label>
+                    <input type="text" id="book-title" placeholder="The Hobbit">
+                </div>
+                <div>
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author" placeholder="J.R.R Tolkien">
+                </div>
+                <div>
+                    <label for="book-pages">Pages</label>
+                    <input type="number" id="book-pages" placeholder="295">
+                </div>
+                <div>
+                    <input type="button" id="cancel" value="Cancel">
+                    <input type="submit" id="save" value="Save">
+                </div>
+            </form>
+        </div>
+    </section>
+    <nav id="nav-bar" class="container">
+        <div id="home"><a href="">Alemi's Ebook Library</a></div>
+        <div id="more">
+            <a href="">More Projects</a>
+            <a href="">About</a>
+        </div>
+    </nav>
+    <div class="spacer"></div>
+    <section id="book-list" class="container">
+        <button onclick="scrollContentLeft()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"></path></svg></button>
+        <div id="book-list-content"></div>
+        <button onclick="scrollContentRight()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path></svg></button>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
